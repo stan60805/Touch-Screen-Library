@@ -165,7 +165,7 @@ TSPoint TouchScreen::getPoint(void) {
      z = (1023-(z2-z1));
    }
 
-   if (! valid) {
+   if (! valid && !z1) {
      z = 0;
    }
 
